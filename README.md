@@ -10,6 +10,8 @@ Image with 200px width, 300px height and a white background
   * http://localhost:3000/200x300/fff/000  
 Image with 200px width, 300px height, a white background and a black font
 
+[![350x250 example](https://rawgit.com/jantimon/svg-placeholder/master/example.svg)](https://github.com/jantimon/svg-placeholder/tree/master/example.svg)
+
 ## Stand alone
 
 ### Installation
@@ -54,7 +56,7 @@ Take a look at the  [CHANGELOG.md](https://github.com/jantimon/svg-placeholder/t
 
 # Contribution
 
-You're free to contribute to this project by submitting [issues](https://github.com/jantimon/svg-placeholder/issues) and/or [pull requests](https://github.com/jantimon/svg-placeholder/pulls). This project is test-driven, so keep in mind that every change and new feature should be covered by tests.
+You're free to contribute to this project by submitting [issues](https://github.com/jantimon/svg-placeholder/issues) and/or [pull requests](https://github.com/jantimon/svg-placeholder/pulls).
 This project uses the [semistandard code style](https://github.com/Flet/semistandard).
 
 # License

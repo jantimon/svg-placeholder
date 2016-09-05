@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="250" viewBox="0 0 350 250" preserveAspectRatio="none">
+  <rect width="350" height="250" fill="#eee"/>
+  <text text-anchor="middle" x="175" y="125"
+    style="fill:#aaa;font-weight:bold;font-size:22px;font-family:Arial,Helvetica,sans-serif;dominant-baseline:central">
+    350x250
+  </text>
+</svg>
