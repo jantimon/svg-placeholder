@@ -1,6 +1,6 @@
 {
   "name": "svg-placeholder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A fast svg image mock placeholder service which can be used as a stand-alone-server or as a express-middleware",
   "main": "index.js",
   "bin": {
@@ -10,6 +10,11 @@
     "express": "^4.14.0",
     "lodash": "^4.15.0"
   },
+  "files": [
+    "index.js",
+    "bin",
+    "lib"
+  ],
   "devDependencies": {
     "conventional-changelog": "^1.1.0",
     "cz-conventional-changelog": "^1.2.0",
