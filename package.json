@@ -1,0 +1,45 @@
+{
+  "name": "svg-placeholder",
+  "version": "1.0.0",
+  "description": "A fast svg image mock placeholder service which can be used as a stand-alone-server or as a express-middleware",
+  "main": "index.js",
+  "bin": {
+    "svg-placeholder": "bin/svg-placeholder.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.15.0",
+    "semistandard": "^9.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node bin/svg-placeholder.js",
+    "test": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jantimon/svg-placeholder.git"
+  },
+  "keywords": [
+    "SVG",
+    "mock",
+    "middleware",
+    "express",
+    "fake",
+    "image",
+    "generator"
+  ],
+  "author": "Jan Nicklas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jantimon/svg-placeholder/issues"
+  },
+  "homepage": "https://github.com/jantimon/svg-placeholder#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
