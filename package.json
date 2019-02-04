@@ -1,6 +1,6 @@
 {
   "name": "svg-placeholder",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A fast svg image mock placeholder service which can be used as a stand-alone-server or as a express-middleware",
   "main": "index.js",
   "bin": {
