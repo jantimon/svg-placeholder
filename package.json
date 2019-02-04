@@ -7,23 +7,29 @@
     "svg-placeholder": "bin/svg-placeholder.js"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "lodash": "^4.15.0"
+    "express": "^4.16.4"
   },
   "files": [
-    "index.js",
     "bin",
+    "index.js",
     "lib"
   ],
+  "engines": {
+    "node": ">=6.4.0"
+  },
   "devDependencies": {
+    "@namics/prettier-config": "0.2.0",
+    "commitizen": "3.0.5",
     "conventional-changelog": "^1.1.0",
     "cz-conventional-changelog": "^1.2.0",
-    "semistandard": "^9.0.0"
+    "prettier": "1.16.3",
+    "standard-version": "4.4.0"
   },
   "scripts": {
+    "prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json)\"",
     "start": "node bin/svg-placeholder.js",
-    "changelog": "conventional-changelog -s -p angular -i CHANGELOG.md",
-    "test": "semistandard"
+    "commit": "git-cz",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -31,12 +37,12 @@
   },
   "keywords": [
     "SVG",
-    "mock",
-    "middleware",
     "express",
     "fake",
+    "generator",
     "image",
-    "generator"
+    "middleware",
+    "mock"
   ],
   "author": "Jan Nicklas",
   "license": "MIT",
@@ -48,5 +54,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "private": false
 }

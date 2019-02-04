@@ -37,9 +37,9 @@ npm i svg-placeholder --save-dev
 ### Usage
 
 ```js
-var express = require('express');
-var app = express();
-var svgPlaceholderMiddleware = require('svg-placeholder');
+const express = require('express');
+const app = express();
+const svgPlaceholderMiddleware = require('svg-placeholder');
 
 app.use('/', svgPlaceholderMiddleware());
 

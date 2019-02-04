@@ -1,0 +1,97 @@
+{
+	"options": {
+		"ts": false,
+		"tslint": false,
+		"es": true,
+		"eslint": false,
+		"editorconfig": true,
+		"prettier": true,
+		"stylelint": false,
+		"gitignore": false,
+		"npmrc": false,
+		"readme": false,
+		"githooks": false,
+		"commitlint": false,
+		"nodeVersion": false,
+		"webpack": false,
+		"install": true,
+		"force": false,
+		"dryRun": false,
+		"mode": "survey",
+		"packageJson": {
+			"name": "svg-placeholder",
+			"description": "A fast svg image mock placeholder service which can be used as a stand-alone-server or as a express-middleware",
+			"version": "1.0.2",
+			"author": "Jan Nicklas"
+		},
+		"license": "licenseOpenSource",
+		"copyrightHolder": "Jan Nicklas"
+	},
+	"mergedFiles": {
+		"package.json": {
+			"override": false,
+			"data": {
+				"name": "svg-placeholder",
+				"version": "1.0.2",
+				"description": "A fast svg image mock placeholder service which can be used as a stand-alone-server or as a express-middleware",
+				"main": "index.js",
+				"bin": {
+					"svg-placeholder": "bin/svg-placeholder.js"
+				},
+				"dependencies": {
+					"express": "^4.16.4"
+				},
+				"files": ["bin", "index.js", "lib"],
+				"engines": {
+					"node": ">=6.4.0"
+				},
+				"devDependencies": {
+					"@namics/prettier-config": "0.2.0",
+					"conventional-changelog": "^1.1.0",
+					"cz-conventional-changelog": "^1.2.0",
+					"prettier": "1.16.3",
+					"semistandard": "^9.0.0"
+				},
+				"scripts": {
+					"changelog": "conventional-changelog -s -p angular -i CHANGELOG.md",
+					"prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json)\"",
+					"start": "node bin/svg-placeholder.js",
+					"test": "semistandard"
+				},
+				"repository": {
+					"type": "git",
+					"url": "git+https://github.com/jantimon/svg-placeholder.git"
+				},
+				"keywords": ["SVG", "express", "fake", "generator", "image", "middleware", "mock"],
+				"author": "Jan Nicklas",
+				"license": "MIT",
+				"bugs": {
+					"url": "https://github.com/jantimon/svg-placeholder/issues"
+				},
+				"homepage": "https://github.com/jantimon/svg-placeholder#readme",
+				"config": {
+					"commitizen": {
+						"path": "./node_modules/cz-conventional-changelog"
+					}
+				},
+				"private": false
+			}
+		},
+		"LICENSE": {
+			"override": false,
+			"data": "MIT License\n\nCopyright (c) 2019-present Jan Nicklas\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+		},
+		".editorconfig": {
+			"override": false,
+			"data": "# EditorConfig. Frontend. Default. Namics.\n# @see: http://EditorConfig.org\n# install a plugin to your editor: http://editorconfig.org/#download\n# mark: not all plugins supports the same EditorConfig properties\n\n# This is the top-most .editorconfig file (do not search in parent directories)\nroot = true\n\n### All files\n[*]\n# Force charset utf-8\ncharset = utf-8\n# Indentation\nindent_style = tab\nindent_size = 4\n# line breaks and whitespace\ninsert_final_newline = true\ntrim_trailing_whitespace = true\n# end_of_line = lf\n\n### Frontend files\n[*.{css,scss,less,js,json,ts,sass,php,html,hbs,mustache,phtml,html.twig}]\n\n### Markdown\n[*.md]\nindent_style = space\nindent_size = 4\ntrim_trailing_whitespace = false\n\n### YAML\n[*.yml]\nindent_style = space\nindent_size = 2\n\n### Specific files\n[{package,bower,lerna}.json]\nindent_style = space\nindent_size = 2\n"
+		},
+		".prettierignore": {
+			"override": false,
+			"data": "# Node\n**/node_modules\n**/package.json\n**/package-lock.json\n\n# Generated\n**/bower.json\n**/lerna.json\n\n# Build\n**/build\n**/dist\n**/public\n**/coverage\n**/storybook-static\n\n# Nitro\n**/project/blueprints\n**/.yo-rc.json"
+		},
+		".prettierrc.js": {
+			"override": false,
+			"data": "module.exports = require('@namics/prettier-config');\n"
+		}
+	}
+}
